@@ -1,0 +1,24 @@
+[package]
+edition = "2021"
+name = "egui_try"
+version = "0.1.0"
+[dependencies]
+chrono = "*"
+eframe = "*"
+egui = "*"
+mpd = "*"
+#test = "*"
+
+[dependencies.egui_extras]
+features = ["image", "svg"]
+version = "*"
+
+[dependencies.image]
+features = ["jpeg", "png"]
+version = "*"
+
+[profile]
+[profile.release]
+codegen-units = 1
+lto = true
+panic = "abort"

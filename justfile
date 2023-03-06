@@ -1,0 +1,2 @@
+clean:
+	fd "~" -X rm
